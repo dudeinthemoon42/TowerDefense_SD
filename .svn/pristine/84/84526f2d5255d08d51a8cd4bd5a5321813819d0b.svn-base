@@ -1,0 +1,24 @@
+#ifndef _SHOT_
+#define _SHOT_
+#include "Graphic.h"
+#include "Enemy.h"
+#include "Tower.h"
+#include <string>
+#include <vector>
+#include "Graphic.h"
+using namespace std;
+
+class Shot {
+	private:
+		Graphic * myGraphic;
+		Tower * shotTower;
+		Enemy * targetEnemy;
+	public:
+		shot(string type, Tower * newTower, Enemy * newEnemy);
+		~shot(){};
+		void Update();
+		void draw();
+
+
+
+#endif  // _SHOT_

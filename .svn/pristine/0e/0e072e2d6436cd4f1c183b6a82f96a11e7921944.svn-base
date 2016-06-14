@@ -1,0 +1,128 @@
+#ifndef _SHOT_
+#define _SHOT_
+#include "Graphic.h"
+#include "Enemy.h"
+#include "Tower.h"
+#include <string>
+#include <vector>
+#include "Graphic.h"
+
+class Shot {
+	/*private:
+		Graphic * myGraphic;
+		Tower * shotTower;
+		Enemy * targetEnemy;
+*/
+	public:
+		Shot(){};
+		//Shot(string type, Tower * newTower, Enemy * newEnemy);
+		~Shot(){};
+/*		void Update();
+		void draw();
+*/
+
+
+#endif  // _SHOT_
+
+
+
+
+
+
+
+
+
+
+
+
+using namespace std;
+#include "Graphic.h"
+#include "Enemy.h"
+#include "Tower.h"
+#include<iostream>
+
+#include <vector>
+
+#include <sstream> 
+#include<iostream>
+#include<fstream>
+#include<GL/glut.h>
+#include<math.h>
+
+//Shot::Shot(string type, Tower * newTower, Enemy * newEnemy) {
+	/*myGraphic = type;
+	shotTower = newTower;
+	targetEnemy = newEnemy;
+	myGraphic.setPosition(shotTower->myGraphic->x, shotTower->myGraphic->y);
+*/
+//}	
+
+/*void Shot::update () {
+	targetX = targetEnemy->myGraphic->x;
+	targetY = targetEnemy->myGraphic->y;	
+
+	double curXStep = 5 * cos( atan( (double)(myGraphic->y-targetY)/(double)(myGraphic->x-targetX) ) );
+	double curYStep = 5 * sin( atan( (double)(myGraphic->y-targetY)/(double)(myGraphic->x-targetX) ) );
+
+	double targetRotation = atan( (double)(myGraphic->y-targetY)/(double)(myGraphic->x-targetX) 
+
+	if( fabs(myGraphic->x - targetX) > 2 ){
+		myGraphic->setPosition(myGraphic->x + curXStep, myGraphic->y + curYStep);
+
+	if ( fabs(targetRotation - myGraphic->rotation) > 5 ) {
+		myGraphic->rotation += (targetRotation - myGraphic->rotation) / 5;
+}
+
+void Shot::draw () {
+	myGraphic -> draw();
+}*/
+
+
+	
+
+
+
+
+
+#ifndef _ENEMYMANAGER_
+#define _ENEMYMANAGER_
+
+#include "Enemy.h"
+#include "Shot.h"
+
+class EnemyManager{
+
+	public:
+		static std::vector<Enemy *> enemyAr;
+		//static std::vector<Shot *> shotAr;
+
+		EnemyManager(){};
+		~EnemyManager(){};
+		void update();
+		void setUp();
+};
+
+
+#endif  // _ENEMYMANAGER_
+
+//TOWER
+for(unsigned int x = 0; x < EnemyManager::enemyAr.size(); x ++){
+		/*Graphic * tempGraphic = new Graphic("rectangle",myGraphic->x,myGraphic-y);
+		tempGraphic->setDimensions(myGraphic->width + 10,myGraphic->height + 10);
+		if( GraphicsManager::hitTest(tempGraphic,EnemyManager::enemyAr.at(x)->myGraphic) )
+			new Shot("shotType",this,EnemyManager::enemyAr.at(x) );*/
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
