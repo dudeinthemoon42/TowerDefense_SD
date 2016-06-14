@@ -1,0 +1,1 @@
+"# TowerDefense_SD Requires GLUT framework (now discontinued but still available for download). See https://www.opengl.org/resources/libraries/glut/glut_downloads.php for available API documentation and downloads. Version used for development was v3.7." 
